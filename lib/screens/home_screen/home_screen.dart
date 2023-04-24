@@ -25,6 +25,9 @@ class _HomeScreenState extends State<HomeScreen>{
         title: AppBarTitle(label: widget.title),
         elevation: AppDimensions.appBarElevation,
       ),
+      body: Container(
+        margin: const EdgeInsets.all(AppDimensions.scaffoldMargin),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () { Navigator.push(
             context, MaterialPageRoute(builder: (builder) => const AddExpenseScreen(title: AppStrings.addExpenseScreenTitle))); },
